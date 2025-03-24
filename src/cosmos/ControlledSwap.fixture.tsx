@@ -43,14 +43,14 @@ function Fixture() {
   )
   const inputToken = useOption('input', {
     options: currencies,
-    defaultValue: SupportedChainId[SupportedChainId.MAINNET],
+    defaultValue: SupportedChainId[SupportedChainId.BASE],
   })
   const outputToken = useOption('output', {
     options: currencies,
-    defaultValue: `${SupportedChainId[SupportedChainId.MAINNET]} USDC`,
+    defaultValue: `${SupportedChainId[SupportedChainId.BASE]} USDC`,
   })
 
-  const connector = useProvider(SupportedChainId.MAINNET)
+  const connector = useProvider(SupportedChainId.BASE)
 
   const eventHandlers = useMemo(
     // eslint-disable-next-line react-hooks/rules-of-hooks

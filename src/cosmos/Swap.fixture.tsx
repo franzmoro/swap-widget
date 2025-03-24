@@ -26,7 +26,7 @@ const TOKEN_WITH_NO_LOGO = {
   address: '0x3819f64f282bf135d62168C1e513280dAF905e06',
 }
 
-const mainnetTokens = tokens.filter((token) => token.chainId === SupportedChainId.MAINNET)
+const mainnetTokens = tokens.filter((token) => token.chainId === SupportedChainId.BASE)
 const tokenLists: Record<string, TokenInfo[] | string> = {
   Default: tokens,
   Extended: 'https://extendedtokens.uniswap.org/',

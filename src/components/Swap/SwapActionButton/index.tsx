@@ -39,7 +39,7 @@ export default function SwapActionButton() {
     return <ConnectWalletButton />
   } else if (error === ChainError.MISMATCHED_CHAINS || error === ChainError.UNSUPPORTED_CHAIN) {
     const tokenChainId = inputCurrency?.chainId ?? outputCurrency?.chainId
-    const supportedTokenChainId = isSupportedChainId(tokenChainId) ? tokenChainId : SupportedChainId.MAINNET
+    const supportedTokenChainId = isSupportedChainId(tokenChainId) ? tokenChainId : SupportedChainId.BASE
     return <SwitchChainButton chainId={supportedTokenChainId} />
   } else if (isWrap) {
     return <WrapButton disabled={isDisabled} />

@@ -39,7 +39,7 @@ export interface Swap {
 const initialSwap: Swap = {
   type: TradeType.EXACT_INPUT,
   amount: '',
-  [Field.INPUT]: nativeOnChain(SupportedChainId.MAINNET),
+  [Field.INPUT]: nativeOnChain(SupportedChainId.BASE),
 }
 
 export const controlledAtom = atom<Swap | undefined>(undefined)

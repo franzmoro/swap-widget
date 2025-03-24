@@ -44,7 +44,7 @@ export function getAssetsRepoURI(asset: LogoTableInput): string | undefined {
     : undefined
 }
 
-export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MAINNET): string {
+export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.BASE): string {
   switch (chainId) {
     case SupportedChainId.POLYGON:
     case SupportedChainId.POLYGON_MUMBAI:
